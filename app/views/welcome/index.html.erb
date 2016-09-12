@@ -1,0 +1,33 @@
+<h1>Users Page</h1>
+
+<button id='show_create'>New user form</button>
+
+<div id='edit_user_div' class='no-display'>
+	<form id='edit_form'>
+		<input id='edit_first_name' type="text" name="user[first_name]">
+		<br>
+		<input id='edit_last_name' type="text" name="user[last_name]">
+		<br>
+		<input id='edit_phone_number' type="number" name="user[phone_number]">
+		<br>
+		<input type="hidden" id='user_id' >
+		<input type="submit">
+	</form>
+</div>
+
+<div class='no-display' id='new_user_content'>
+	<form action='/users' method='POST' id='new_user'>
+		<input id='user_first_name' type="text" name="user[first_name]" placeholder='first name' required>
+		<br>
+		<input id='user_last_name' type="text" name="user[last_name]" placeholder='last name' required>
+		<br>
+		<input id='user_phone_number' type="number" name="user[phone_number]" placeholder='phone'>
+		<br>
+		<input type='submit' />
+	</form>
+</div>
+
+
+<ul id='users'></ul>
+
+
